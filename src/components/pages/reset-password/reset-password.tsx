@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Eye, EyeOff, Globe } from 'lucide-react'
+import { Eye, EyeOff, Globe, Waves } from 'lucide-react'
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -18,22 +18,9 @@ export default function ResetPassword() {
                     {/* Logo */}
                     <Link href="/" className="flex items-center justify-center space-x-2">
                         <div className="h-8 w-8 bg-primary text-primary-foreground grid place-items-center rounded">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            >
-                                <rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
-                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-                            </svg>
+                            <Waves className='size-6' />
                         </div>
-                        <span className="text-xl font-bold">Jobpilot</span>
+                        <span className="text-xl font-bold">Talent Waves</span>
                     </Link>
                 </div>
             </div>

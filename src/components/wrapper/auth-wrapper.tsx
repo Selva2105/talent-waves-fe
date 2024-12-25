@@ -2,7 +2,7 @@ import { ScrollArea } from '@radix-ui/react-scroll-area'
 import Link from 'next/link'
 import React, { FC } from 'react'
 import Image from 'next/image'
-import { Building2, Users } from 'lucide-react'
+import { Building2, Users, Waves } from 'lucide-react'
 import { Briefcase } from 'lucide-react'
 
 interface AuthLayoutProps {
@@ -19,9 +19,9 @@ const AuthLayout: FC<AuthLayoutProps> = ({ children }) => {
                         {/* Logo */}
                         <Link href="/" className="flex items-center space-x-2 mb-12">
                             <div className="h-8 w-8 bg-primary text-primary-foreground grid place-items-center rounded">
-                                <Briefcase className='size-6' />
+                                <Waves className='size-6' />
                             </div>
-                            <span className="text-xl font-bold">Jobpilot</span>
+                            <span className="text-xl font-bold">Talent Waves</span>
                         </Link>
 
                         {/* Childrens */}

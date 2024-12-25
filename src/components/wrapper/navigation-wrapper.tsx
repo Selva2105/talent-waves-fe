@@ -10,8 +10,9 @@ interface NavigationWrapperProps {
 
 export default function NavigationWrapper({ children }: NavigationWrapperProps) {
   const pathname = usePathname();
-  const isSignInPage = pathname === "/sign-in" || pathname === "/sign-up" || pathname === "/reset-password" || pathname === "/email-verification" || pathname === "/forget-password";
+  const isSignInPage = pathname === "/sign-in" || pathname === "/sign-up" || pathname === "/reset-password" || pathname === "/email-verification" || pathname === "/forget-password" || pathname === "/maintanance" ;
 
+  console.log(pathname)
   return (
     <>
       {!isSignInPage && <SiteHeader />}

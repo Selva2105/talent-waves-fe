@@ -31,7 +31,7 @@ const Hero = () => {
                 </div>
                 <div className="hidden lg:flex justify-center">
                     <Image
-                        src="/images/Hero.svg"
+                        src="/images/hero_1.svg"
                         alt="HeroPage Illustration"
                         width={500}
                         height={400}

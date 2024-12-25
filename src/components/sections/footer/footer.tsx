@@ -1,16 +1,16 @@
-import { Facebook, Instagram, Twitter, Globe } from 'lucide-react'
+import { Facebook, Instagram, Twitter, Globe, Waves } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1B1B1B] text-gray-400">
+    <footer className="bg-gray-900 text-gray-400">
       <div className="container mx-auto px-8 pt-12 pb-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 text-white mb-4">
-              <Globe className="h-5 w-5" />
-              <span className="text-xl font-semibold">Jobpilot</span>
+              <Waves className='size-6' />
+              <span className="text-xl font-semibold">Talent Waves</span>
             </div>
             <div className="space-y-2">
               <p>Call now: (319) 555-0115</p>
@@ -67,7 +67,7 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm mb-4 md:mb-0">
-            © 2021 Jobpilot - Job Portal. All rights Reserved
+            © 2021 Talent Waves - Job Portal. All rights Reserved
           </p>
           <div className="flex gap-4">
             <Link href="#" className="hover:text-white transition-colors">
