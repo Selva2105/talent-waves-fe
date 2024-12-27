@@ -1,4 +1,4 @@
-import { ScrollArea } from '@radix-ui/react-scroll-area'
+import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area'
 import Link from 'next/link'
 import React, { FC } from 'react'
 import Image from 'next/image'
@@ -13,7 +13,7 @@ const AuthLayout: FC<AuthLayoutProps> = ({ children }) => {
     return (
         <div className="grid lg:grid-cols-2">
             {/* Left Column */}
-            <ScrollArea className='h-screen'>
+            <ScrollArea className="h-screen">
                 <div className="p-8 lg:p-12 xl:p-16">
                     <div className="w-full max-w-md mx-auto">
                         {/* Logo */}
@@ -28,6 +28,7 @@ const AuthLayout: FC<AuthLayoutProps> = ({ children }) => {
                         {children}
                     </div>
                 </div>
+                <ScrollBar orientation="vertical" />
             </ScrollArea>
 
             {/* Right Column */}

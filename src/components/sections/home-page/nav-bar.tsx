@@ -1,3 +1,5 @@
+'use client';
+
 import Link from "next/link"
 import { Search, Phone, Waves } from 'lucide-react'
 import { Button } from "@/components/ui/button"
@@ -12,8 +14,10 @@ import { Input } from "@/components/ui/input"
 import IndiaFlag from "@/components/SVG/IndiaFlag"
 import UsaFlag from "@/components/SVG/UsaFlag"
 import UkFlag from "@/components/SVG/UkFlag"
+import { useAuth } from "@/context/auth-context";
 
 export function SiteHeader() {
+    const { user } = useAuth();
     return (
         <header className="w-full border-b">
             {/* Top row with navigation and contact info */}
